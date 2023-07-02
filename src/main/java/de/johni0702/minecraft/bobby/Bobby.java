@@ -23,7 +23,7 @@ import java.util.stream.Stream;
 
 @Mod("bobby")
 public class Bobby{
-    private static final Logger LOGGER = LogManager.getLogger();
+    static final Logger LOGGER = LogManager.getLogger();
 
     public static final String MOD_ID = "bobby";
 

@@ -1,6 +1,5 @@
 package de.johni0702.minecraft.bobby.mixin.sodium;
 
-import de.johni0702.minecraft.bobby.Bobby;
 import de.johni0702.minecraft.bobby.BobbyConfig;
 import me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,6 +1,5 @@
 package de.johni0702.minecraft.bobby;
 
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.fml.loading.LoadingModList;
 import org.objectweb.asm.tree.ClassNode;
@@ -11,7 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 public class MixinConfigPlugin implements IMixinConfigPlugin {
-    private boolean hasSodium() { return LoadingModList.get().getModFileById("sodium") != null; }
+    private boolean hasSodium() { return LoadingModList.get().getModFileById("rubidium") != null; }
     private boolean hasStarlight() { return LoadingModList.get().getModFileById("starlight") != null; }
 
     @Override
@@ -27,6 +26,8 @@ public class MixinConfigPlugin implements IMixinConfigPlugin {
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (!FMLEnvironment.dist.isClient())
             return false;
+
+        Bobby.LOGGER.info("Loading mixin: " + mixinClassName);
 
         if (!hasStarlight() && targetClassName.startsWith("ca.spottedleaf.starlight.")) {
             return false;
