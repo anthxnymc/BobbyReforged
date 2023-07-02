@@ -27,7 +27,7 @@ public class BobbyConfig {
 
             enabled = b.define("Enable Bobby", true);
             noBlockEntities = b.define("Do not load block entities in fake chunks", true);
-            taintFakeChunks = b.define("Reduce the light levels in fake chunks", true);
+            taintFakeChunks = b.define("Reduce the light levels in fake chunks", false);
             maxRenderDistance = b.define("Max Render Distance", 32);
             viewDistanceOverwrite = b.define("Integrated Server View Distance override", 0);
         });
