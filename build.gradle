@@ -51,6 +51,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	forge "net.minecraftforge:forge:${project.forge_version}"
 
+	modImplementation("curse.maven:starlight-forge-526854:4631193")
 	modImplementation("curse.maven:rubidium-574856:4573226")
 }
 
