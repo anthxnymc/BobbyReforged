@@ -1,5 +1,6 @@
 {
   "bobby.upgrade.required": "[Bobby] 这个世界包含来自旧版Minecraft的数据，运行/bobby upgrade进行升级",
+  "bobby.upgrade.fallback_world": "[Bobby] 你的备用世界包含来自旧版本 MC 的数据。请使用单人游戏菜单中的“编辑”→“优化世界”选项来将其升级。",
   "bobby.upgrade.not_enabled": "Bobby 此世界未启用",
   "bobby.upgrade.begin": "[Bobby] 将世界数据升级到当前的Minecraft版本，这可能需要几分钟",
   "bobby.upgrade.progress": "[Bobby] 已升级 %d 中的 %d 个区块",
